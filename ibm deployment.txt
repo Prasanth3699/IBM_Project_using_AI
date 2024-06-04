@@ -1,0 +1,23 @@
+watson studio
+watson machine learning services
+
+1. first train a model 
+2. cloud will only understand the .tar file so we need to convert 
+	(!tar -zcvf animal-classification.tgz animal.h5)
+
+## IBM DEPLOYMENT
+
+!pip install  watson-machine-learning-client => in particular file
+!pip install ibm_watson_machine_learning
+
+from ibm_watson_machine_learning import  APIClient
+
+wml_credentials = {
+	"url":"https://eu-gb.ml.cloud.ibm.com",
+	"apikey":"EVt1zVq7kc8EBdZixNmtljy66pVQF4Fe8JLPJl-yMUKB",
+}
+
+client = APIClient(wml_credentials)
+client
+
+https://drive.google.com/drive/folders/1gy3mDzEr45lNJ6L0gPxTLZLyUNFJ-Nj_
